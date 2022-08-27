@@ -1,0 +1,211 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="uisual" content="Made with Uisual (uisual.com)">
+    <meta name="author" content="#">
+    <meta name="description" content="#">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="robots" content="index, follow">
+    <!-- SPEED -->
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- LINK -->
+    <link rel="me" href="#">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/png" href="#" sizes="48x48">
+    <!-- PERFORMANCE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{% static 'css/example.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   
+    <!--Font Awesome-->
+    <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- TITLE -->
+    <title>About</title>
+  </head>
+  <body>
+     
+ <!-- Navbar -->
+ <section class="header">
+  <nav>
+      <a href="index.html"><img src="{% static 'img/pine.png' %}"></a>
+      <div class="nav-links" id="navLinks">
+              <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+              <li>
+                  <a href="{% url 'index' %}">HOME</a>
+              </li>
+              <li>
+                  <a href="{% url 'about' %}">ABOUT</a>
+              </li>
+              <li>
+                  <a href="{% url 'contact' %}">CONTACT</a>
+              </li> <li>
+                  <a href="{% url 'gallery' %}">GALLERY</a>
+              </li>
+          </ul>
+      </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+
+  
+
+<div class="text-box">
+  <br><br><br><br>
+  <h1>Delon Landscaping & Snow removal</h1>
+  <br>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia earum, blanditiis veritatis temporibus illum  <br>itaque architecto?Non, alias eum voluptatibus doloribus dolor rem nostrum odio?
+     </p>
+     
+     <br>
+     <a href="{% url 'gallery' %}" class="hero-btn">Gallery</a>
+</div>
+
+
+</section>
+<!--End Nav-->
+
+    <main role="main">
+      <section class="ui-section-hero">
+        <div class="ui-layout-container">
+          <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+            <!-- COPYWRITING -->
+            <div>
+              <h1>About Us</h1>
+              <p class="ui-text-intro">Since 2014 Delon the blademan has been providing superior services to scarborough. We exclusively serve Commercial, Multi-residential and Institutional properties. This allows us to exceed the needs of your property with a large number of specialized services.</p>
+              <!-- CTA -->
+              <div class="ui-component-cta ui-layout-flex">
+                <a href="{% url 'gallery' %}" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Gallery</a>
+                <p class="ui-text-note"><small>30 days free trial.</small></p>
+              </div>
+            </div>
+            <!-- IMAGE -->
+            <img src="{% static 'img/7.jpg' %}" loading="lazy" alt="#" class="ui-image-half-right">
+          </div>
+        </div>
+      </section>
+      
+      <section class="ui-section-feature">
+        <div class="ui-layout-container">
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <!-- IMAGE -->
+            <img src="{% static 'img/13.jpg' %}" alt="#" class="ui-image-half-left">
+            <!-- FEATURE -->
+            <div>
+              <h2>Skills</h2>
+              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
+              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                <li class="ui-component-list--item ui-component-list--item-check">Turf Rolling</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Planter bed Maintenance</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Edging</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Pruning & Trimming Services </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <!-- FEATURE -->
+            <div>
+              <h2>Nice Features</h2>
+              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
+              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
+                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
+                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
+              </ul>
+            </div>
+            <!-- IMAGE -->
+            <img src="{% static 'img/12.jpg' %}" alt="#" class="ui-image-half-right">
+          </div>
+        </div>
+      </section>
+      
+      <section class="ui-section-testimonial">
+        <div class="ui-layout-container">
+          <div class="ui-section-testimonial__layout ui-layout-grid ui-layout-grid-2">
+            <div class="ui-layout-column-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8DjRBYoqXZVkAwqiVnexMpaULNFG8W6YNSA&usqp=CAU" alt="#" class="ui-section-testimonial--avatar">
+              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;high quality in the work we do and efficiency&rdquo;</p>
+              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
+            </div>
+            <div class="ui-layout-column-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhZU0eAuJdQM3rNQOScv9gD7lKS1SlMGBXQ&usqp=CAU" alt="#" class="ui-section-testimonial--avatar">
+              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;punctuality and excellent delivery time&rdquo;</p>
+              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ui-section-close">
+        <div class="ui-layout-container">
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <h2>Ready to start?</h2>
+            <p class="ui-text-intro">Contact Us for more information</p>
+            <!-- CTA -->
+            <div class="ui-component-cta ui-layout-flex">
+              <a href="{% url 'contact' %}" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Get Started</a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo" class="ui-section-footer">
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          <!-- COPYRIGHT -->
+          <p class="ui-section-footer--copyright ui-text-note">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Delon Landscaping & Snow Removal</p> 
+          <!-- MENU -->
+          <a href="#" role="link" aria-label="#">
+            <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" role="link" aria-label="#">
+            <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+            </svg>
+          </a>
+          <a href="#" role="link" aria-label="#">
+            <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
