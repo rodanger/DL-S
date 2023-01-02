@@ -140,7 +140,7 @@ html { box-sizing: border-box; }
 body {
   background-color: var(--ui-color-background-primary);
   color: var(--ui-color-typography-body);
-  font-family: 'Kalam', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-feature-settings: "liga", "kern";
   font-size: var(--ui-typography-p);
   font-weight: 400;
@@ -188,8 +188,13 @@ h2 {
 p,
 ul { margin-bottom: var(--ui-typography-margin-body); }
 
+.px {
+  color:white;
+}
+
 p:last-child,
-ul:last-child { margin-bottom: 0; }
+ul:last-child { margin-bottom: 0;
+                 }
 
 ul { padding-left: 0; }
 
@@ -598,7 +603,7 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 /* ------var(--ui-color-background-secondary)------*/
 .ui-section-close {
-  background-color: #93b071;
+  background-color: #5a843d;
   padding-bottom: 5rem;
   padding-top: 5rem;
   text-align: center;
@@ -613,6 +618,7 @@ div label[for=ui-component-toggle__yearly] {
 .ui-section-footer {
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
+  background-color: #454545;
 }
 
 .ui-section-footer__layout {
@@ -1055,6 +1061,7 @@ div label[for=ui-component-toggle__yearly] {
   .ui-section-footer {
     padding-bottom: 3rem;
     padding-top: 3rem;
+    background-color: #423e3e;
   }
 
 

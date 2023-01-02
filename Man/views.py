@@ -23,7 +23,7 @@ def contact(request):
         contact.name=name
         contact.email=email
         contact.save()
-        return HttpResponse("<h1>THANKS FOR CONTACT US</h1>")
+        return render(request,"Man/index.html")
 
     return render(request,'Man/contact.html')
 

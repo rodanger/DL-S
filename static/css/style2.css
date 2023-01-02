@@ -1,18 +1,19 @@
+
+
 *{
     
 
     margin: 0;
     padding: 0;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-radius: 5px;
-   
 
 }
 
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url("/DBladeMan/grass.jpeg");
+    background-image: url("/static/img/bg.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -43,9 +44,9 @@ nav img{
 
 .nav-links ul li a{
 
-    color: #fff;
+    color: #f1eaea;
     text-decoration: none;
-    font-size: 16ssspx;
+    font-size: 22px;
    
 }
 
@@ -77,6 +78,7 @@ nav img{
 
 .text-box h1{
     font-size: 82px;
+    color: white;
 }
 
 .text-box p{
@@ -170,6 +172,7 @@ p{
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+    
 }
 
 .row1{
@@ -181,7 +184,7 @@ p{
 
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #5a843d;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -194,6 +197,7 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    color: #fff;
 }
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -294,7 +298,7 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: #f4f4f4;
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -337,7 +341,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(21, 11, 11, 0.7),rgba(0,0,0,0.7)),url(images/garden.jpg);
+    background-image: linear-gradient(rgba(21, 11, 11, 0.7),rgba(0,0,0,0.7)),url("/static/img/bg.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -361,13 +365,38 @@ h3{
 
 .footer{
 
+
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    background-color: #423e3e;
 }
 
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+}
+
+.uno{
+
+    position: fixed;
+    left: 50px;
+    top: 200px;
+}
+
+.nemo{
+    margin: 180px;
+}
+
+#bg{
+
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:1900px 520px;
+    background-attachment: fixed;
+
+
+
+
 }

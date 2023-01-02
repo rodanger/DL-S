@@ -9,20 +9,20 @@
 
 
    
-     <!---->
-     <link rel="preload" as="style" href="{% static 'css/example.css' %}">
+    <!---->
+    <link rel="preload" as="style" href="{% static 'css/example.css' %}">
     <link rel="stylesheet" href="{% static 'css/example.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/galia1.css' %}">
     
-    
-     <!--Font Awesome-->
-     <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
-     <!--Google Font-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet"> 
+    <!--Font Awesome-->
+    <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
  
-     <link rel="stylesheet" href="{% static 'css/galia.css' %}">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -32,44 +32,43 @@
 
  <!-- Navbar -->
  <section class="header">
-    <nav>
-        <a href="index.html"><img src="{% static 'img/pine.png' %}"></a>
-        <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-            <ul>
-                <li>
-                    <a href="{% url 'index' %}">HOME</a>
-                </li>
-                <li>
-                    <a href="{% url 'about' %}">ABOUT</a>
-                </li>
-                <li>
-                    <a href="{% url 'contact' %}">CONTACT</a>
-                </li> <li>
-                    <a href="{% url 'gallery' %}">GALLERY</a>
-                </li>
-            </ul>
-        </div>
-              <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-    </nav>
+  <nav>
+    <!--<a href="index.html"><img src="{% static 'img/pine.png' %}"></a>-->
+    <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li>
+                <a href="{% url 'index' %}">HOME</a>
+            </li>
+            <li>
+                <a href="{% url 'about' %}">SERVICES</a>
+            </li>
+            <li>
+                <a href="{% url 'gallery' %}">PROJECTS</a>
+            </li> <li>
+                <a href="{% url 'contact' %}">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+</nav>
   
   
     
-  
-  <div class="text-box">
-    <br><br><br><br>
-    <h1>Delon Landscaping & Snow removal</h1>
-    <br>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia earum, blanditiis veritatis temporibus illum  <br>itaque architecto?Non, alias eum voluptatibus doloribus dolor rem nostrum odio?
-       </p>
-       
-       <br>
-       <a href="{% url 'contact' %}" class="hero-btn">Contact</a>
-  </div>
+ <!--LOGO-->
+ <div class="text-box">
+  <img src="{% static 'img/dlog3.png' %}" alt="" class="">
+     <p>We offer landscaping service, tree cutting among others, start with us today
+     </p>
+     <a href="{% url 'contact' %}" class="hero-btn">Contact</a>
+ </div>
+ <!---->
   
   
   </section>
   <!--End Nav-->
+
+  
    
     <div class="full-img" id="fullImgBox">
         <img src="{% static 'img/12.jpg' %}" id="fullImg">
@@ -77,31 +76,31 @@
     </div>
 
     <div class="img-gallery">
-        <img src="{% static 'img/16.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/13.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/14.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/17.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/12.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/10.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/18.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/2.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/5.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/6.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/5.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/6.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
-        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)">
+        <img src="{% static 'img/42.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 1-->
+        <img src="{% static 'img/13.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 2-->
+        <img src="{% static 'img/38.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 3-->
+        <img src="{% static 'img/snow10.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 5-->
+        <img src="{% static 'img/12.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 6-->
+        <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 7-->
+        <img src="{% static 'img/26.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 8-->
+        <img src="{% static 'img/place.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 9-->
+        <img src="{% static 'img/5.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 10-->
+        <img src="{% static 'img/9.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 11-->
+        <img src="{% static 'img/25.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 12-->
+        <img src="{% static 'img/23.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 13-->
+        <img src="{% static 'img/place1.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 14-->
+        <img src="{% static 'img/37.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 15-->
+        <img src="{% static 'img/8.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 16-->
+        <img src="{% static 'img/34.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 17-->
+        <img src="{% static 'img/6.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 18-->
+        <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 19-->
+        <img src="{% static 'img/41.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 20-->
+        <img src="{% static 'img/26.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 21-->
+        <img src="{% static 'img/21.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 22-->
+        <img src="{% static 'img/3.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 23-->
+        <img src="{% static 'img/27.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 24-->
+        <img src="{% static 'img/4.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 25-->
+        <img src="{% static 'img/11.jpg' %}" onclick="openFullImg(this.src)"> <!--IMG 26-->
 
 
 
@@ -122,7 +121,7 @@
                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
                  </svg>
                </a>
-               <a href="#" role="link" aria-label="#">
+               <a href="https://www.instagram.com/delon_the_blademan/" role="link" aria-label="#">
                  <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
